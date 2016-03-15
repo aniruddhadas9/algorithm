@@ -6,11 +6,9 @@ import java.util.Arrays;
 import java.util.List;
 
 /**
- * 
  * Tested: Yes
- * 
- * @author eTouch
  *
+ * @author eTouch
  */
 public class Fibonacci {
     public static List<Integer> fibonacci(int n) {
@@ -40,10 +38,10 @@ public class Fibonacci {
         }
         return seq;
     }
-    
-    public static void main( String[] args) {
-    	for(int i: fibonacci(12)) {
-    		System.out.println(i);
-    	}
+
+    public static void main(String[] args) {
+        for (int i : fibonacci(12)) {
+            System.out.println(i);
+        }
     }
 }

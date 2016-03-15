@@ -2,7 +2,7 @@ package com.aniruddh.algorithm;
 
 /**
  * Tested: yes
- * 
+ * <p/>
  * Created by eTouch on 2/8/2016.
  */
 public class Factorial {
@@ -17,14 +17,14 @@ public class Factorial {
         }
         return toReturn;
     }
-    
-    
+
+
     public static void main(String[] args) {
-    	System.out.println(factorial(3));
-    	System.out.println(factorial(7));
-    	System.out.println(factorial(10));
-    	System.out.println(factorial(15));
-    	System.out.println(factorial(19));
+        System.out.println(factorial(3));
+        System.out.println(factorial(7));
+        System.out.println(factorial(10));
+        System.out.println(factorial(15));
+        System.out.println(factorial(19));
     }
 
 }

@@ -1,9 +1,8 @@
 package com.aniruddh.algorithm;
 
 /**
- * 
  * Tested: Yes
- * 
+ * <p/>
  * Created by eTouch on 2/8/2016.
  */
 public class ReverseString {
@@ -18,9 +17,9 @@ public class ReverseString {
         }
         return builder.toString();
     }
-    
-    
+
+
     public static void main(String[] args) {
-    	System.out.println(inPlaceReverse("aniruddha"));
+        System.out.println(inPlaceReverse("aniruddha"));
     }
 }

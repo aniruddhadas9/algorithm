@@ -1,36 +1,34 @@
 package com.aniruddh.algorithm;
 
-import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
 public class DuplicateCharInStringEbay {
 
-	public void findDuplicateChars(String str) {
+    public static void main(String a[]) {
+        DuplicateCharInStringEbay dcs = new DuplicateCharInStringEbay();
+        dcs.findDuplicateChars("Java2Novice and can be tested");
+    }
 
-		Map<Character, Integer> dupMap = new HashMap<Character, Integer>();
-		char[] chrs = str.toCharArray();
-		for (Character ch : chrs) {
-			if (dupMap.containsKey(ch)) {
-				dupMap.put(ch, dupMap.get(ch) + 1);
-			} else {
-				dupMap.put(ch, 1);
-			}
-		}
+    public void findDuplicateChars(String str) {
 
-		Set<Character> keys = dupMap.keySet();
-		for (Character ch : keys) {
-			if (dupMap.get(ch) > 1) {
-				System.out.println(ch + "--->" + dupMap.get(ch));
-			}
-		}
-	}
+        Map<Character, Integer> dupMap = new HashMap<Character, Integer>();
+        char[] chrs = str.toCharArray();
+        for (Character ch : chrs) {
+            if (dupMap.containsKey(ch)) {
+                dupMap.put(ch, dupMap.get(ch) + 1);
+            } else {
+                dupMap.put(ch, 1);
+            }
+        }
 
-	public static void main(String a[]) {
-		DuplicateCharInStringEbay dcs = new DuplicateCharInStringEbay();
-		dcs.findDuplicateChars("Java2Novice and can be tested");
-	}
+        Set<Character> keys = dupMap.keySet();
+        for (Character ch : keys) {
+            if (dupMap.get(ch) > 1) {
+                System.out.println(ch + "--->" + dupMap.get(ch));
+            }
+        }
+    }
 
 }

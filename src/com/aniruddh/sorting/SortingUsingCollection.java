@@ -1,11 +1,12 @@
 package com.aniruddh.sorting;
 
-import java.util.*;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
 
 /**
  * @author eTouch
- * Collections.sort will sort the array in default obk=ject sorting order
- *
+ *         Collections.sort will sort the array in default obk=ject sorting order
  */
 public class SortingUsingCollection {
     public static void main(String[] args) {
@@ -17,7 +18,6 @@ public class SortingUsingCollection {
 
 
 final class SortingUsingCollection1 {
-	
-	
+
 
 }

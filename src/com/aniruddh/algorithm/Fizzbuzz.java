@@ -5,11 +5,9 @@ import java.util.List;
 
 
 /**
- * 
  * Tested: Yes
- * 
- * @author eTouch
  *
+ * @author eTouch
  */
 public class Fizzbuzz {
 
@@ -28,8 +26,8 @@ public class Fizzbuzz {
         }
         return toReturn;
     }
-    
+
     public static void main(String[] args) {
-    	System.out.println(fizzBuzz(34));
+        System.out.println(fizzBuzz(34));
     }
 }
