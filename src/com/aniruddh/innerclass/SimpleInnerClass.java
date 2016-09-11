@@ -2,7 +2,7 @@ package com.aniruddh.innerclass;
 
 
 /**
- * @author eTouch
+ * @author Aniruddha Das
  * @desc We cannot define a class as private as java does not allow it
  * A class only can be declared as public, abstract or final.
  */

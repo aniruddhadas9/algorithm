@@ -4,9 +4,17 @@ import java.util.*;
 
 /**
  * Tested: Yes
- * <p/>
+ *
+ *
+ * @author Aniruddha Das
+ *
+ * @desc
  * What is Anagrams: a word, phrase, or name formed by rearranging the letters of another, such as cinema, formed from iceman
  * Another example: eat is came from tea
+ *
+ * Concept of writting the program
+ *
+ *
  */
 
 public class Anagrams {

@@ -7,7 +7,7 @@ import java.util.List;
 /**
  * Tested: Yes
  *
- * @author eTouch
+ * @author Aniruddha Das
  */
 public class Fizzbuzz {
 

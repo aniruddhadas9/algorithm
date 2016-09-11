@@ -3,11 +3,13 @@ package com.aniruddh.search;
 /**
  * Tested: Yes
  *
- * @author eTouch The linear-search algorithm searches a one-dimensional array
+ * @author Aniruddha Das
+ *
+ * @description The linear-search algorithm searches a one-dimensional array
  *         for a specific data item. The search first examines the element at
  *         index 0 and continues examining successive elements until either the
  *         data item is found or no more elements remain to examine. The
- *         following pseudocode demonstrates this algorithm:
+ *         following pseudo code demonstrates this algorithm:
  *         <p/>
  *         Advantage of Linear Search
  *         <p/>

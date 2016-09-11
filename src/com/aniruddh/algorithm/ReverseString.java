@@ -3,7 +3,7 @@ package com.aniruddh.algorithm;
 /**
  * Tested: Yes
  * <p/>
- * Created by eTouch on 2/8/2016.
+ * Created by Aniruddha Das on 2/8/2016.
  */
 public class ReverseString {
 

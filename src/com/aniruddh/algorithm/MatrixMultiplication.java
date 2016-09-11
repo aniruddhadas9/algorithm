@@ -4,7 +4,7 @@ package com.aniruddh.algorithm;
 /**
  * Tested: No
  *
- * @author eTouch
+ * @author Aniruddha Das
  */
 public class MatrixMultiplication {
 
@@ -19,7 +19,7 @@ public class MatrixMultiplication {
         dump(c);
     }
 
-    static void dump(int[][] x) {
+    private static void dump(int[][] x) {
         if (x == null) {
             System.err.println("array is null");
             return;
@@ -33,7 +33,7 @@ public class MatrixMultiplication {
         }
     }
 
-    static int[][] multiply(int[][] a, int[][] b) {
+    private static int[][] multiply(int[][] a, int[][] b) {
         // =========================================================
         // 1. a.length contains a's row count
         //

@@ -8,7 +8,7 @@ import java.util.List;
 /**
  * Tested: Yes
  *
- * @author eTouch
+ * @author Aniruddha Das
  */
 public class Fibonacci {
     public static List<Integer> fibonacci(int n) {

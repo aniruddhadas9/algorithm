@@ -3,7 +3,7 @@ package com.aniruddh.algorithm;
 /**
  * Tested: yes
  * <p/>
- * Created by eTouch on 2/8/2016.
+ * Created by Aniruddha Das on 2/8/2016.
  */
 public class Factorial {
     public static long factorial(int n) {
