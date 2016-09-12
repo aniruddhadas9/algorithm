@@ -28,6 +28,9 @@ algorithm.iml
 # IntelliJ
 /out/
 
+#gradle
+/build
+
 
 # JIRA plugin
 atlassian-ide-plugin.xml
