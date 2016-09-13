@@ -92,9 +92,6 @@ local.properties
 .recommenders/
 
 .gradle/
-src/main/
-src/test/resources/
-/.gitignore
 ### Gradle template
 .gradle
 build/
