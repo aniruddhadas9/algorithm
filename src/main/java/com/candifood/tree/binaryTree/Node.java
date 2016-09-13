@@ -5,8 +5,8 @@ package com.candifood.tree.binaryTree;
  */
 public class Node {
     private int data;
-    private int left;
-    private int right;
+    private Node left;
+    private Node right;
 
     public int getData() {
         return data;
@@ -16,19 +16,19 @@ public class Node {
         this.data = data;
     }
 
-    public int getLeft() {
+    public Node getLeft() {
         return left;
     }
 
-    public void setLeft(int left) {
+    public void setLeft(Node left) {
         this.left = left;
     }
 
-    public int getRight() {
+    public Node getRight() {
         return right;
     }
 
-    public void setRight(int right) {
+    public void setRight(Node right) {
         this.right = right;
     }
 }
