@@ -34,19 +34,6 @@ public class Anagrams {
         }
     }
 
-    public static void main(String[] args) {
-
-        List<String> words = new ArrayList<String>();
-        words.add("tea");
-        words.add("eat");
-        words.add("cinema");
-        words.add("iceman");
-        words.add("tea");
-
-        Anagrams a = new Anagrams(words);
-        System.out.println(a.getAnagrams("tea").toString());
-    }
-
     private String alphabetize(final String word) {
         final byte[] bytes = word.getBytes();
         Arrays.sort(bytes);
@@ -58,6 +45,10 @@ public class Anagrams {
         final List<String> anagrams = lookup.get(signature);
         return anagrams == null ? new ArrayList<String>() : anagrams;
     }
+
+
+
+
 }
 
 
