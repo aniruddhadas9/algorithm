@@ -6,6 +6,8 @@ package com.candifood.tree.binaryTree;
  * @desc: this program is designed to show the binary tree in action.
  */
 public class BinaryTree {
+
+
     public Node addNode(int data, Node node) {
         System.out.println("addNode|data: "+data+", node.data: "+node); //
 
@@ -43,6 +45,18 @@ public class BinaryTree {
         }
 
         return node;
+    }
+
+    /**
+     * there are normally three types of travere
+     * 1. pre order traverse
+     * 2. in order traverse
+     * 3. post order traverse
+     *
+     */
+    public void traverse() {
+
+
     }
 
     private Node addDataToNode(int data, Node node) {
