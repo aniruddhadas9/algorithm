@@ -1,5 +1,14 @@
 package com.candifood.test.sorting;
 
+import com.candifood.sorting.InsertionSort;
+import org.junit.Before;
+import org.junit.Test;
+
+import java.util.Random;
+
+import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.fail;
+
 /**
  * Created by eTouch on 2/5/2016.
  *
@@ -14,33 +23,36 @@ package com.candifood.test.sorting;
  */
 public class InsertionSortTest {
 
-    public int[] doInsertionSortBySwap(int[] input){
+    private int[] numbers;
+    private final static int SIZE = 7;
+    private final static int MAX = 20;
 
-        int temp;
-        for (int i = 1; i < input.length; i++) {
-            for(int j = i ; j > 0 ; j--){
-                if(input[j] < input[j-1]){
-                    temp = input[j];
-                    input[j] = input[j-1];
-                    input[j-1] = temp;
-                }
-            }
+    @Before
+    public void setUp() throws Exception {
+        numbers = new int[SIZE];
+        Random generator = new Random();
+        for (int i = 0; i < numbers.length; i++) {
+            numbers[i] = generator.nextInt(MAX);
         }
-        return input;
     }
 
+    @Test
+    public void testInsertionSort() {
+        long startTime = System.currentTimeMillis();
 
-    public void insertionSort(int array[]) {
-        int n = array.length;
-        for (int j = 1; j < n; j++) {
-            int key = array[j];
-            int i = j-1;
-            while ( (i > -1) && ( array [i] > key ) ) {
-                array [i+1] = array [i];
-                i--;
+        InsertionSort insertionSort = new InsertionSort();
+        insertionSort.doInsertionSortBySwap(numbers);
+
+        long stopTime = System.currentTimeMillis();
+        long elapsedTime = stopTime - startTime;
+        System.out.println("InsertionSortTest|" + elapsedTime);
+
+        for (int i = 0; i < numbers.length - 1; i++) {
+            if (numbers[i] > numbers[i + 1]) {
+                fail("Should not happen");
             }
-            array[i+1] = key;
         }
+        assertTrue(true);
 
     }
 

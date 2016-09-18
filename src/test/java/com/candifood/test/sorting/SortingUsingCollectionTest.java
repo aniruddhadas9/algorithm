@@ -16,8 +16,3 @@ public class SortingUsingCollectionTest {
     }
 }
 
-
-final class SortingUsingCollection1 {
-
-
-}

@@ -1,6 +1,5 @@
 package com.candifood.test.sorting;
 
-
 import static org.junit.Assert.assertTrue;
 import static org.junit.Assert.fail;
 
@@ -10,9 +9,6 @@ import java.util.Random;
 import com.candifood.sorting.MergeSort;
 import org.junit.Before;
 import org.junit.Test;
-
-
-
 
 /**
  * Created by Aniruddha Das on 2/5/2016.
