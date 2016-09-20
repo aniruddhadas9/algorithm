@@ -1,4 +1,4 @@
-package com.candifood.algorithm;
+package com.candifood.stringOperation;
 
 /**
  * Tested: Yes

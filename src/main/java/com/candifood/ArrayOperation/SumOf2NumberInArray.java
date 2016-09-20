@@ -1,4 +1,4 @@
-package com.candifood.algorithm;
+package com.candifood.ArrayOperation;
 
 import java.util.List;
 
