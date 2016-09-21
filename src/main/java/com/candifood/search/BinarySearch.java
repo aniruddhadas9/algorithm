@@ -1,6 +1,5 @@
 package com.candifood.search;
 
-import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
@@ -18,9 +17,9 @@ import java.util.List;
  */
 public class BinarySearch {
 
-    private static int sortCount = 0;
+    private int sortCount = 0;
 
-    public static boolean search(List<Integer> numbers, int key) {
+    public boolean search(List<Integer> numbers, int key) {
 
         boolean returnValue = false;
         if (sortCount == 0) {
@@ -59,29 +58,4 @@ public class BinarySearch {
 
     }
 
-    public static void main(String args[]) {
-
-        List<Integer> numbers = new ArrayList<Integer>();
-        numbers.add(11);
-        numbers.add(32);
-        numbers.add(1);
-        numbers.add(6);
-        numbers.add(13);
-        numbers.add(114);
-        numbers.add(311);
-        numbers.add(61);
-        numbers.add(89);
-        numbers.add(34);
-        numbers.add(78);
-        //numbers.add(178);
-
-        boolean result = search(numbers, 13);
-        System.out.println("result: " + result);
-        if (result) {
-            System.out.println("The number available ");
-        } else {
-            System.out.println("Number does not exist in the list");
-        }
-
-    }
 }

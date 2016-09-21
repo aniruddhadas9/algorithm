@@ -18,14 +18,13 @@ package com.candifood.search;
  */
 public class LinerSearch {
 
-    public static void main(String[] args) {
-        int i, srch = 112;
-        int[] x = {20, 15, 12, 30, -5, 72, 456};
-        for (i = 0; i <= x.length - 1; i++)
-            if (x[i] == srch) {
-                System.out.println("Found " + srch);
-                return;
+    public int search(int[] input, int key) {
+        int returnValue = 0;
+        for (int i = 0; i <= input.length - 1; i++) {
+            if (input[i] == key) {
+                returnValue = 1;
             }
-        System.out.println("Did not find " + srch);
+        }
+        return returnValue;
     }
 }

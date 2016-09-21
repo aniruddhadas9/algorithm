@@ -5,27 +5,31 @@ package com.candifood.ArrayOperation;
  */
 public class FindDuplicateElementInArray {
 
-    private int[] duplicate;
+    private int[] unique;
     private int[] onlyDuplicate;
-    public int[] duplicateElements(int[] input) {
-        duplicate = new int[input.length];
+
+    public int[] duplicateElements(int[] input, int delete) {
+
+        unique = new int[input.length];
         onlyDuplicate = new int[input.length];
         int duplicateFlag = 0;
+
         for(int i=0; i < input.length; i++) {
             duplicateFlag = 0;
-            for(int j=0; j< duplicate.length; j++) {
-                if(input[i] == duplicate[j]) {
+            for(int j=0; j< unique.length; j++) {
+                if(input[i] == unique[j]) {
                     duplicateFlag = 1;
                 }
             }
             if(duplicateFlag==0) {
-                duplicate[i] = input[i];
+                unique[i] = input[i];
             } else {
                 onlyDuplicate[i] = input[i];
             }
         }
 
-        int[] sanitizedOnlyDuplicate = new DeleteElementHavingZeroValueInArray().sanitaizedArray(onlyDuplicate);
+        int[] sanitizedOnlyDuplicate = delete==0 ? new DeleteElementHavingZeroValueInArray().sanitaizedArray(onlyDuplicate)
+                :new DeleteElementHavingZeroValueInArray().sanitaizedArray(unique);
 
         for(int j=0; j< sanitizedOnlyDuplicate.length; j++) {
             System.out.print(sanitizedOnlyDuplicate[j]+", ");
@@ -34,6 +38,6 @@ public class FindDuplicateElementInArray {
 
         System.out.println("\n------------------------------------------");
 
-        return duplicate;
+        return sanitizedOnlyDuplicate;
     }
 }

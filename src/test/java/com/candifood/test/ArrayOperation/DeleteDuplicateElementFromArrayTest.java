@@ -1,6 +1,5 @@
 package com.candifood.test.ArrayOperation;
 
-import com.candifood.ArrayOperation.DeleteDuplicateElementFromArray;
 import com.candifood.ArrayOperation.FindDuplicateElementInArray;
 import com.candifood.test.helper.ArrayGeneration;
 import org.junit.Test;
@@ -15,7 +14,7 @@ public class DeleteDuplicateElementFromArrayTest {
     @Test
     public void duplicateElements() {
         int[] input = ArrayGeneration.randomArray(20);
-        duplicate = new DeleteDuplicateElementFromArray().duplicateElements(input);
+        duplicate = new FindDuplicateElementInArray().duplicateElements(input, 1);
 
         System.out.print("input array: ");
         for (int i =0; i< input.length; i++) {

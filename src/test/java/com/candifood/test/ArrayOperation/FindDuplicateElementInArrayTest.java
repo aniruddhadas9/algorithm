@@ -14,7 +14,7 @@ public class FindDuplicateElementInArrayTest {
     @Test
     public void duplicateElements() {
         int[] input = ArrayGeneration.randomArray(20);
-        duplicate = new FindDuplicateElementInArray().duplicateElements(input);
+        duplicate = new FindDuplicateElementInArray().duplicateElements(input, 0);
 
         System.out.print("input array: ");
         for (int i =0; i< input.length; i++) {
