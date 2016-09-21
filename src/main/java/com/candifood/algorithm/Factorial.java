@@ -6,7 +6,8 @@ package com.candifood.algorithm;
  * Created by Aniruddha Das on 2/8/2016.
  */
 public class Factorial {
-    public static long factorial(int n) {
+
+    public long factorial(int n) {
         if (n < 1) {
             throw new IllegalArgumentException(
                     "n must be greater than zero");
@@ -16,15 +17,6 @@ public class Factorial {
             toReturn *= i;
         }
         return toReturn;
-    }
-
-
-    public static void main(String[] args) {
-        System.out.println(factorial(3));
-        System.out.println(factorial(7));
-        System.out.println(factorial(10));
-        System.out.println(factorial(15));
-        System.out.println(factorial(19));
     }
 
 }

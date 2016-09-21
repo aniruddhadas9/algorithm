@@ -1,4 +1,4 @@
-package com.candifood.algorithm;
+package com.candifood.parsing;
 
 import java.text.DecimalFormat;
 
