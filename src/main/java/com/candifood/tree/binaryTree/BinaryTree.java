@@ -48,6 +48,22 @@ public class BinaryTree {
     }
 
     /**
+     *
+     * @param nodeToBeDeleted
+     * @param BTree
+     * The important thing is to reagange the elements in the
+     * tree after deleting one element to make a perfrect tree again
+     * @return 0 or 1 as true or false
+     */
+    public int deleteNode(Node nodeToBeDeleted, Node BTree) {
+        int returnValue = 0;
+
+
+
+        return 1;
+    }
+
+    /**
      * there are normally three types of travere
      * 1. pre order traverse
      * 2. in order traverse
