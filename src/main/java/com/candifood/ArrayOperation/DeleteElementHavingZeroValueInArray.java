@@ -7,9 +7,9 @@ public class DeleteElementHavingZeroValueInArray {
 
     public int[] sanitaizedArray(int[] input) {
         int[] output = new int[newArrayLength(input)];
-        int count=0;
-        for(int i=0; i<input.length; i++) {
-            if(input[i]!=0){
+        int count = 0;
+        for (int i = 0; i < input.length; i++) {
+            if (input[i] != 0) {
                 output[count] = input[i];
                 count++;
             }
@@ -18,9 +18,9 @@ public class DeleteElementHavingZeroValueInArray {
     }
 
     private int newArrayLength(int[] input) {
-        int count=0;
-        for(int i=0; i<input.length; i++) {
-            if(input[i]!=0)count++;
+        int count = 0;
+        for (int i = 0; i < input.length; i++) {
+            if (input[i] != 0) count++;
         }
         return count;
     }
