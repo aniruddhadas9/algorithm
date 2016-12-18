@@ -7,13 +7,11 @@ import java.util.List;
  * Tested Yes [It have some issue and need to be resolved]
  *
  * @author Aniruddha Das
- *
- * @description:
- *          The binary search divide the list into two part and start searching
- *         the particular value in corresponding part of the list In this way
- *         half of the list is always sliced out and need not to be looped. Due
- *         to its devide and search way it is the fasted searching algorithm
- *         till now in the world :)
+ * @description: The binary search divide the list into two part and start searching
+ * the particular value in corresponding part of the list In this way
+ * half of the list is always sliced out and need not to be looped. Due
+ * to its devide and search way it is the fasted searching algorithm
+ * till now in the world :)
  */
 public class BinarySearch {
 

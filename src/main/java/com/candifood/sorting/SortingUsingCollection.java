@@ -6,7 +6,7 @@ import java.util.List;
 
 /**
  * @author Aniruddha Das
- *         Collections.sort will sort the array in default obk=ject sorting order
+ * Collections.sort will sort the array in default obk=ject sorting order
  */
 public class SortingUsingCollection {
     public static void main(String[] args) {

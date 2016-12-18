@@ -5,16 +5,11 @@ import java.util.*;
 /**
  * Tested: Yes
  *
- *
  * @author Aniruddha Das
- *
- * @desc
- * What is Anagrams: a word, phrase, or name formed by rearranging the letters of another, such as cinema, formed from iceman
+ * @desc What is Anagrams: a word, phrase, or name formed by rearranging the letters of another, such as cinema, formed from iceman
  * Another example: eat is came from tea
- *
+ * <p>
  * Concept of writting the program
- *
- *
  */
 
 public class Anagrams {
@@ -45,10 +40,6 @@ public class Anagrams {
         final List<String> anagrams = lookup.get(signature);
         return anagrams == null ? new ArrayList<String>() : anagrams;
     }
-
-
-
-
 }
 
 
