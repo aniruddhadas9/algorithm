@@ -23,6 +23,7 @@ public class BubbleSort {
 
         for (pass = 0; pass <= x.length - 2; pass++) {
 
+            // why x.length-pass-2 ?
             for (i = 0; i <= x.length - pass - 2; i++) {
                 if (x[i] > x[i + 1]) {
                     int temp = x[i];

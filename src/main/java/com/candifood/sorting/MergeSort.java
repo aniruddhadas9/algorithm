@@ -3,7 +3,8 @@ package com.candifood.sorting;
 /**
  * Created by Aniruddha Das on 2/5/2016.
  *
- * @desc This is one of the fastest sorting process. It breaks the array into small pieces until one element is left in the array
+ * @desc This is one of the fastest sorting process.
+ * It breaks the array into small pieces until one element is left in the array
  * and then keep merging the small array into one which gives the sorted array.
  */
 public class MergeSort {
