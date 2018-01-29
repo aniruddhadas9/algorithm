@@ -2,6 +2,7 @@
  * Asked in google interview
  * This question is about creating callback function or higher ordfer function
  * you can start with -- https://www.sitepoint.com/higher-order-functions-javascript/
+ *  another - https://eloquentjavascript.net/05_higher_order.html
  * @param prefix
  * @param fun
  * @returns {*}
