@@ -1,5 +1,7 @@
 /**
  * Asked in google interview
+ * This question is about creating callback function or higher ordfer function
+ * you can start with -- https://www.sitepoint.com/higher-order-functions-javascript/
  * @param prefix
  * @param fun
  * @returns {*}
