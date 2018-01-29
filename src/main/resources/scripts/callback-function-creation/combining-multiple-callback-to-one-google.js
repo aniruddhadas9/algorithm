@@ -1,29 +1,50 @@
+/**
+ * Asked in google interview
+ * @param prefix
+ * @param fun
+ * @returns {*}
+ */
+
+// this is the structure which will be used as input array member for allCallback or super function
 function sample(prefix, fun){
-    return 1;
+    // console.log('simple called %o, ', prefix);
+    return fun();
 }
 
 function allCallback(allFun) {
-    console.log('allfun:%o', typeof allFun);
+
     return function (prefix, funm) {
         let returnValue = [];
         allFun.forEach(function(fun) {
-            console.log('prefix:%o|funm:%o', prefix, funm);
-            // console.log('---:fun:%o', typeof fun);
-            returnValue.cancat(fun(prefix, funm));
+            returnValue =[ ...returnValue, ...fun()];
+            // console.log('fun:%o | returnValue:%o', fun, returnValue);
         });
-        return returnValue;
+        return funm(returnValue);
     }
 }
 
 maincall = allCallback([
-    new sample('aa', function(){ console.log('11');}),
-    new sample('ab', function(){ console.log('11');}),
-    new sample('ac', function(){ console.log('11');}),
-    new sample('ad', function(){ console.log('11');})
+    function(){ return ['aaple', 'aama'];},
+    function(){ return ['abman', 'abwomen'];},
+    function(){ return ['acount', 'accurate'];},
+    function(){ return ['adidas', 'adas'];}
     ]);
 
 
 maincall('aa', function(result){
     console.log('final result: %o', result);
 });
+
+
+
+
+/* another example*/
+function man(outer) {
+    return function(inner, fun){
+        return fun.call(this, outer+inner);
+    }
+}
+var manner = man(15);
+manner(20, function (res){console.log('>>>>'+res+'<<<<<')})
+
 
