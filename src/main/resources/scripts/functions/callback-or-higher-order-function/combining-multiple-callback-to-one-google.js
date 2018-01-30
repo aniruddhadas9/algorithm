@@ -1,8 +1,8 @@
 /**
  * Asked in google interview
  * This question is about creating callback function or higher ordfer function
- * you can start with -- https://www.sitepoint.com/higher-order-functions-javascript/
- *  another - https://eloquentjavascript.net/05_higher_order.html
+ * you can start with: https://www.sitepoint.com/higher-order-functions-javascript/
+ * this is in detail and recommended [important]: https://eloquentjavascript.net/05_higher_order.html
  * @param prefix
  * @param fun
  * @returns {*}
@@ -22,7 +22,8 @@ function allCallback(allFun) {
             returnValue =[ ...returnValue, ...fun()];
             // console.log('fun:%o | returnValue:%o', fun, returnValue);
         });
-        return funm(returnValue);
+
+        funm(returnValue);
     }
 }
 
