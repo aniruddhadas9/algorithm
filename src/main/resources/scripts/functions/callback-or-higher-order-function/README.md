@@ -1,5 +1,10 @@
 # callback or higher-order functions
 
+Higher-order function or call back are used in java script to create more abstraction in coding.
+
+###### Abstraction
+Abstractions hide details and give us the ability to talk about problems at a higher (or more abstract) level.
+
 Below code is a classic example of creating callback function or higher-order function
 
 ```javascript
@@ -67,6 +72,7 @@ repeat(3, function(n) {
 });
 // → 0 is even
 // → 2 is even
+
 ```
 
 The lexical scoping rules that we discussed in Chapter 3 work to our advantage when using functions in this way. 
@@ -96,5 +102,18 @@ function transparentWrapping(f) {
   };
 }
 That’s a useless function, but it shows the pattern we are interested in—the function it returns passes all of the given arguments, and only those arguments, to f. It does this by passing its own arguments object to apply. The first argument to apply, for which we are passing null here, can be used to simulate a method call. We will come back to that in the next chapter.
+
+#### disadvantage of higher-order function
+
+In terms of what the computer is actually doing, these two approaches are also quite different. 
+The first will build up new arrays when running filter and map, whereas the second only computes some numbers, doing less work. 
+You can usually afford the readable approach, but if you’re processing huge arrays, and doing so many times, the more awkward loop style might be worth the extra speed.
+
+🐴🌹🐉👟
+
+##### Summary
+Being able to pass function values to other functions is not just a gimmick—it’s a deeply useful aspect of JavaScript. 
+It allows us to write functions that model computations with “gaps” in them. 
+The code that calls these functions can fill in the gaps by providing function values.
 
 > note: The document created from https://eloquentjavascript.net/05_higher_order.html
