@@ -45,7 +45,7 @@ public class Palindrome {
         if(input.charAt(leftPosition) != input.charAt(rightPosition) ) {
             return matchString(input, leftPosition, rightPosition);
         }
-
+        return 1;
     }
 
     private int positionOfValidChar(String input, int count, int ofset) {
