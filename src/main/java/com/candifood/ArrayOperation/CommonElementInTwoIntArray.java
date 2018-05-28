@@ -8,12 +8,12 @@ public class CommonElementInTwoIntArray {
     int secoundArrayIndex = 0;
     int[] resultArray;
 
-    public int[] commonElements(int[] firstArray, int[] secoundArray) {
-        resultArray = (firstArray.length > secoundArray.length) ? new int[secoundArray.length] : new int[firstArray.length];
+    public int[] commonElements(int[] firstArray, int[] secondArray) {
+        resultArray = (firstArray.length > secondArray.length) ? new int[secondArray.length] : new int[firstArray.length];
 
         for (firstArrayIndex = 0; firstArrayIndex < firstArray.length - 1; firstArrayIndex++) {
-            for (secoundArrayIndex = 0; secoundArrayIndex < secoundArray.length - 1; secoundArrayIndex++) {
-                if (firstArray[firstArrayIndex] == secoundArray[secoundArrayIndex]) {
+            for (secoundArrayIndex = 0; secoundArrayIndex < secondArray.length - 1; secoundArrayIndex++) {
+                if (firstArray[firstArrayIndex] == secondArray[secoundArrayIndex]) {
                     resultArray[firstArrayIndex] = firstArray[firstArrayIndex];
                 }
             }

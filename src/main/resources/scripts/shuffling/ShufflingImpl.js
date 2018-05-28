@@ -1,5 +1,3 @@
-package com.candifood.shuffling;
-
 /**
  * Tested: No
  * <p/>
@@ -17,7 +15,6 @@ package com.candifood.shuffling;
  * use as a source of randomness.
  */
 
-
-public class ShufflingImpl {
+export class ShufflingImpl {
 
 }
