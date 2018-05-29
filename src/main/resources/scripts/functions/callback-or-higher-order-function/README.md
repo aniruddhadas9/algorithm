@@ -1,6 +1,6 @@
 # callback or higher-order functions
 
-Higher-order function or call back are used in java script to create more abstraction in coding.
+Higher-order function or call back are used in JavaScript to create more abstraction in coding.
 
 ###### Abstraction
 Abstractions hide details and give us the ability to talk about problems at a higher (or more abstract) level.
