@@ -19,15 +19,14 @@ hs_err_pid*
 # User-specific stuff:
 .idea/
 algorithm.iml
+src/main/main.iml
+src/test/test.iml
+/out/
 
 ## File-based project format:
 *.iws
 
 ## Plugin-specific files:
-
-# IntelliJ
-/out/
-
 
 
 # JIRA plugin
