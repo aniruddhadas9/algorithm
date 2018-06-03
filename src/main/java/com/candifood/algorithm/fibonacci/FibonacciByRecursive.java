@@ -1,4 +1,4 @@
-package com.candifood.fibonacci;
+package com.candifood.algorithm.fibonacci;
 
 import java.util.Arrays;
 

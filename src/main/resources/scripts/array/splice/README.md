@@ -1,8 +1,18 @@
 # splice
 
 The splice() method changes the contents of an array by removing existing elements and/or adding new elements.
+And returns removed element array. If no element removed, it returns empty [] array.
 
->`array.splice(start[, deleteCount[, item1[, item2[, ...]]]])`
+```javascript
+Array.prototype.splice(start[, deleteCount[, item1[, item2[, ...]]]])
+```
+little simplified.
+
+```javascript
+Array.prototype.splice(startIndex, NumberIntemDelete?, AddItem1?, AddItem2?, AddItem3?, ...)
+```
+And only the first parameter is required. even if you will not pass any parameter, it will not throws any error but does nothing.
+
 
 
 ### Parameters
@@ -39,7 +49,7 @@ myFish.splice(2, 0, 'drum'); // insert 'drum' at 2-index position
 
 myFish.splice(2, 1); // remove 1 item at 2-index position (that is, "drum")
 // myFish is ["angel", "clown", "mandarin", "sturgeon"]
-```
+
 
 
 Remove 0 elements from index 2, and insert "drum"
@@ -84,3 +94,4 @@ var removed = myFish.splice(2);
 
 // myFish is ["angel", "clown"] 
 // removed is ["mandarin", "sturgeon"]
+```

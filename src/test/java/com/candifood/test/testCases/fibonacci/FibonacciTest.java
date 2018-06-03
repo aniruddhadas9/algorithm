@@ -3,7 +3,7 @@ package com.candifood.test.testCases.fibonacci;
 
 import org.junit.Test;
 
-import static com.candifood.fibonacci.Fibonacci.fibonacci;
+import static com.candifood.algorithm.fibonacci.Fibonacci.fibonacci;
 
 /**
  * Tested: Yes
