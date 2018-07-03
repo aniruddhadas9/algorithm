@@ -27,21 +27,20 @@ Or you can also use like this where you need to show profile to logged in users
 
 to implement this we need to make a component like this.
 
-```javascript
+```ecmascript 6
 
 import React, { Component, PropTypes } from 'react'
 import fetchUser from 'twitter'
 
 class Twitter extends Component {
   state = {
-    user: null,
-  }
+    user: null
+  };
   static propTypes = {
     username: PropTypes.string.isRequired,
-  }
+  };
   componentDidMount () {
-    fetchUser(this.props.username)
-      .then((user) => this.setState({user}))
+    fetchUser(this.props.username).then((user) => this.setState({user}));
   }
   render () {
     return this.props.children(this.state.user)
