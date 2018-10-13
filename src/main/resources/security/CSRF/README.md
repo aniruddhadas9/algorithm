@@ -9,4 +9,4 @@
 
 #### Random Token
 
-Users created a randon nonses which used later to make transaction
+Users created a random nonces which used later to make transaction

@@ -39,21 +39,3 @@ The attacker create a session id and send it to the server and spoof user identi
 So avoid this, invalidate the existing session and create a new one.
 
 
-
-Exam:
-
-Example of session policy: use custon authentication
-A user supplies : basic
-A user submits a form: Form based
-Example of proper session id: random
-Making a cookie as secure will:  not to send
-Best practice for TSL: All pages which required a session identifier should also required TSL
-CSRF only works in GET request: False
-CSRF only works on a site with a Cross-Site Scription Vulnerability: false
-CSRF Attack happens when: Malicious client side script force requests to the application on the users behalf
-CSRF attacks against an application are possible when transaction-specific requests do not required Re-authentication or Nonces
-If a malicious forces a request to another host, the browser will automatically supply the appropriate session cookies: True
-When am application uses nonces: It assigna unique transaction id that is valid on subcequent request
-
-
-
