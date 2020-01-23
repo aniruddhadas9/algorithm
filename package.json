@@ -1,0 +1,32 @@
+{
+  "name": "algorithm",
+  "version": "1.0.0",
+  "description": "Algorithm writing skills",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "karma -c=karma.conf.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aniruddhadas9/algorithm.git"
+  },
+  "keywords": [
+    "java",
+    "angular",
+    "rxjs",
+    "react",
+    "algorithm"
+  ],
+  "author": "Aniruddha Das",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aniruddhadas9/algorithm/issues"
+  },
+  "homepage": "https://github.com/aniruddhadas9/algorithm#readme",
+  "dependencies": {
+    "rxjs": "^6.5.2"
+  }
+}
