@@ -1,12 +1,14 @@
-# event stack
+# event stack & call stack:
 
 >Event-stack is not call-stack.
 
-The event stack holds all the events need to be executed like `setTimeout`, `setInterval`, `click` etc but call stack holds all the execution sequence in the javascript
+event stack: The event stack holds all the events need to be executed like `setTimeout`, `setInterval`, `click` etc.
+call stack: call stack holds all the execution sequence in the javascript
+
 
 So never confused with call-stack
 
-###### Examle
+###### Example
 
 Consider the following code snippet:
 

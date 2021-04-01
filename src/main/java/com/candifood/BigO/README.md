@@ -1,7 +1,8 @@
 # Big O
 
 Normally the time and space complexity of an algorithm is measured with a notation called Big O.
- Below category are mainly used to measure the time and space complexity.
+
+Below category are mainly used to measure the time and space complexity.
 
  - O(1)
  - O(n)
@@ -13,7 +14,7 @@ Normally the time and space complexity of an algorithm is measured with a notati
  
  
  
-### Life saving tools ###
+### Life-saving tools ###
 
 ##### Algorithm Complexity: #####
 you need to know Big-O. It's a must. If you struggle with basic big-O complexity analysis, then you are almost guaranteed not to get hired. It's, like, one chapter in the beginning of one theory of computation book, so just go read it. You can do it.

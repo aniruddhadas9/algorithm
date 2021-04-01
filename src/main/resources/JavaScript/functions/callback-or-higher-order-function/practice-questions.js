@@ -12,8 +12,8 @@ console.log(mul(2)(3)[1](4));
 // output will be 6 10
 
 // more details
-m = mul(11); // this will return a function as expected
-/*
+m = mul(11); // this will return a function as below
+/* OUTPUT
 ƒ (y){
     return [x*y, function(z){
         return x*y + z;
