@@ -30,6 +30,5 @@
   },
   "homepage": "https://github.com/aniruddhadas9/algorithm#readme",
   "dependencies": {
-    "rxjs": "^6.5.2"
   }
 }
