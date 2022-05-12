@@ -1,0 +1,21 @@
+.container {
+    /*width: 1000px;*/
+    display: flex;
+    align-self: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.boxes {
+
+}
+
+.box {
+    width: 150px;
+    height: 150px;
+    border: 1px solid #1ea7fd;
+    margin: 1px;
+}
