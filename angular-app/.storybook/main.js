@@ -8,7 +8,7 @@ module.exports = {
     "@storybook/addon-essentials",
     "@storybook/addon-interactions"
   ],
-  "framework": "@storybook/angular",
+  "framework": "@storybook/angular-app",
   "core": {
     "builder": "@storybook/builder-webpack5"
   }

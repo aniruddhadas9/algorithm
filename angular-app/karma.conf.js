@@ -4,7 +4,7 @@
 module.exports = function (config) {
   config.set({
     basePath: '',
-    frameworks: ['jasmine', '@angular-devkit/build-angular'],
+    frameworks: ['jasmine', '@angular-app-devkit/build-angular-app'],
     plugins: [
       require('karma-jasmine'),
       require('karma-chrome-launcher'),
@@ -25,7 +25,7 @@ module.exports = function (config) {
       suppressAll: true // removes the duplicated traces
     },
     coverageReporter: {
-      dir: require('path').join(__dirname, './coverage/angular'),
+      dir: require('path').join(__dirname, './coverage/angular-app'),
       subdir: '.',
       reporters: [
         { type: 'html' },
