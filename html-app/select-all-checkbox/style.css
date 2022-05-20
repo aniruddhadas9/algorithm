@@ -12,10 +12,17 @@
     display: flex;
     align-self: center;
     flex-wrap: wrap;
-    flex-direction: row;
-    align-content: center;
+    flex-direction: column;
+    align-content: flex-start;
     justify-content: center;
-    align-items: center;
+    align-items: self-start;
+    margin-left: 200px;
+}
+
+.selectAll {
+    font-weight: bold;
+    font-size: 20px;
+    margin-left: 200px;
 }
 
 .boxes {

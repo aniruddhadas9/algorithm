@@ -11,8 +11,11 @@ document.addEventListener("DOMContentLoaded", function () {
         console.log('box: %o', container[i]);
         // container[i].innerHTML = i;
         container[i].addEventListener("mousedown", function (event) {
-            console.log('mouse down');
+            console.log('mouse down: %o', event);
             event.target.style.backgroundColor = 'red';
+            console.log('container[i].nextSibling:%0', container[i].nextSibling); // .style.backgroundColor = 'red';
+            console.log('container[i].nextElementSibling:%0', container[i].nextElementSibling); // .style.backgroundColor = 'red';
+            // container[i].nextElementSibling.style.backgroundColor = 'red';
         });
 
         container[i].addEventListener("mouseenter", function (event) {
@@ -36,7 +39,7 @@ document.addEventListener("DOMContentLoaded", function () {
         });
 
         container[i].addEventListener("mouseleave", function (event) {
-            console.log(event);
+            // console.log(event);
             if (detectLeftButton(event)) {
                 // event.target.style.backgroundColor = 'white';
             }

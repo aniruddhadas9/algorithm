@@ -1,52 +1,58 @@
 document.addEventListener("DOMContentLoaded", function () {
     console.log('onloadEvent');
-    const container = document.getElementsByClassName('box');
+    const container = document.getElementsByClassName('container');
+    const selectAll = document.getElementsByClassName('selectAll');
+    const selectAllCheckbox = document.getElementById('selectAll');
     const resetButton = document.getElementsByClassName('reset-button');
     const valDiv = document.getElementsByClassName('val');
     console.log('container: %o', container);
+    let allSelected = false;
+    let selectedCount = 0;
+    const numberOfCheckBox = 10;
 
-    // foreach loop did not worked, need to debug later
-    // container.forEach ((box) => {
-    for (let i = 0; i < container.length; i++) {
-        console.log('box: %o', container[i]);
-        // container[i].innerHTML = i;
-        container[i].addEventListener("mousedown", function (event) {
-            console.log('mouse down');
-            event.target.style.backgroundColor = 'red';
-        });
+    for(let i=0; i< numberOfCheckBox; i++) {
+        const div = document.createElement('div');
 
-        container[i].addEventListener("mouseenter", function (event) {
-            console.log('mouse enter');
-            // event.
+        const label = document.createElement('label');
+        const textForCheckBoxLabel = document.createTextNode('CheckBox' + i);
+        label.appendChild(textForCheckBoxLabel);
 
-            if (detectLeftButton(event)) {
-                if(i <= 4) {
-                    let idt = i;
-                    let val = [i];
-                    for (let j = 0; j < 7; j++) {
-                        // container[idt].innerHTML = parseInt(container[idt].innerHTML, 10) + 'w';
-                        container[idt].style.backgroundColor = 'red';
-                        idt += 5;
-                        val.push(idt);
-                    }
-                    valDiv[0].innerHTML = JSON.stringify(val);
-                }
-                event.target.style.backgroundColor = 'red';
+        const checkbox = document.createElement('input');
+        checkbox.setAttribute('type', 'checkbox');
+        checkbox.setAttribute('id', 'check'+i);
+        checkbox.addEventListener('change', (event) => {
+            if(event.target.checked) {
+                selectedCount++;
+            } else {
+                selectedCount--;
             }
-        });
-
-        container[i].addEventListener("mouseleave", function (event) {
-            console.log(event);
-            if (detectLeftButton(event)) {
-                // event.target.style.backgroundColor = 'white';
+            if (selectedCount >=  numberOfCheckBox) {
+                selectAllCheckbox.checked = true;
+            } else {
+                selectAllCheckbox.checked = false;
             }
-        });
+        })
+
+
+        div.appendChild(label);
+        div.appendChild(checkbox);
+        div.appendChild(document.createElement('br'));
+
+        container[0].appendChild(div);
     }
 
+    selectAll[0].addEventListener('change', (event) => {
+        for(let i=0; i< numberOfCheckBox; i++) {
+            const input = document.getElementById('check'+i);
+            input.checked = event.target.checked;
+        }
+        selectedCount = numberOfCheckBox;
+    });
+
     resetButton[0].addEventListener('click', (event) => {
-        for (let i = 0; i < container.length; i++) {
-            // container[i].innerHTML = parseInt(container[i].innerHTML, 10) + i;
-            container[i].style.backgroundColor = 'white';
+        for (let i = 0; i < numberOfCheckBox; i++) {
+            const input = document.getElementById('check'+i);
+            input.checked = false;
         }
     });
 
@@ -54,25 +60,4 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 });
-
-function resetBoxes() {
-    const container = document.getElementsByClassName('box');
-    for (let i = 0; i < container.length; i++) {
-        container[i].style.backgroundColor = 'none';
-    }
-}
-
-
-
-function detectLeftButton(event) {
-    if (event.metaKey || event.ctrlKey || event.altKey || event.shiftKey) {
-        return false;
-    } else if ('buttons' in event) {
-        return event.buttons === 1;
-    } else if ('which' in event) {
-        return event.which === 1;
-    } else {
-        return (event.button == 1 || event.type == 'click');
-    }
-}
 

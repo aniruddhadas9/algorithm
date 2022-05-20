@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 if(i <= 4) {
                     let idt = i;
                     let val = [i];
-                    for (let j = 0; j < 8; j++) {
+                    for (let j = 0; j < 7; j++) {
                         // container[idt].innerHTML = parseInt(container[idt].innerHTML, 10) + 'w';
                         container[idt].style.backgroundColor = 'red';
                         idt += 5;
