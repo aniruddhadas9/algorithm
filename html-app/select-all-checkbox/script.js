@@ -10,6 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
     let selectedCount = 0;
     const numberOfCheckBox = 10;
 
+    // Create all checkbox and add event listen to individual checkboxes
     for(let i=0; i< numberOfCheckBox; i++) {
         const div = document.createElement('div');
 
@@ -32,8 +33,6 @@ document.addEventListener("DOMContentLoaded", function () {
                 selectAllCheckbox.checked = false;
             }
         })
-
-
         div.appendChild(label);
         div.appendChild(checkbox);
         div.appendChild(document.createElement('br'));
@@ -41,6 +40,7 @@ document.addEventListener("DOMContentLoaded", function () {
         container[0].appendChild(div);
     }
 
+    // Select all checkbox functionality
     selectAll[0].addEventListener('change', (event) => {
         for(let i=0; i< numberOfCheckBox; i++) {
             const input = document.getElementById('check'+i);
@@ -49,11 +49,14 @@ document.addEventListener("DOMContentLoaded", function () {
         selectedCount = numberOfCheckBox;
     });
 
+    // Reset button functionality
     resetButton[0].addEventListener('click', (event) => {
         for (let i = 0; i < numberOfCheckBox; i++) {
             const input = document.getElementById('check'+i);
             input.checked = false;
         }
+        selectAllCheckbox.checked = false;
+        selectedCount = 0;
     });
 
 
