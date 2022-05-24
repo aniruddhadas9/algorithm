@@ -1,0 +1,41 @@
+.title, .description, .val {
+    font-size: 20px;
+    text-align: center;
+}
+
+.description {
+    margin-bottom: 15px;
+}
+
+.container {
+    /*width: 1000px;*/
+    display: flex;
+    align-self: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: flex-start;
+    justify-content: center;
+    align-items: self-start;
+    margin-left: 200px;
+}
+
+.selectAll {
+    font-weight: bold;
+    font-size: 20px;
+    margin-left: 200px;
+}
+
+.boxes {
+
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    border: 1px solid #1ea7fd;
+    margin: 1px;
+}
+
+.highlight {
+    background-color: #66bf3c;
+}
