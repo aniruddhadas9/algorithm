@@ -1,0 +1,16 @@
+.boxes {
+    display: flex;
+    flex-direction: row;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    border: 1px solid #1ea7fd;
+    margin: 1px;
+}
+
+
+.highlight {
+    background-color: #66bf3c;
+}
