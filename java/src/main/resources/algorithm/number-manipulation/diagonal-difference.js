@@ -7,7 +7,7 @@
 
  Input Format
 
- The first line contains a single integer, . The next  lines denote the matrix's rows, with each line containing space-separated integers describing the columns.
+ The first line contains a single integer. The next  lines denote the matrix's rows, with each line containing space-separated integers describing the columns.
 
  Constraints
 

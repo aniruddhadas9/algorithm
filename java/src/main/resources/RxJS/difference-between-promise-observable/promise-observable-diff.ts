@@ -1,4 +1,5 @@
-import * as rxjs from 'rxjs';
+// import * as rxjs from 'rxjs';
+
 
 export class PromiseObservableDiff {
     private promise: Promise<any> = this.randomFromPromise();

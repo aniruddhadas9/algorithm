@@ -1,9 +1,9 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 841.9 595.3">
    <g fill="#FF923D">
       <circle cx="420" cy="300" r="200"/>
-      <polyline points="380,210 610 210" style="fill:none;stroke:white;stroke-width:20" />
-      <polyline points="380,260 610 260" style="fill:none;stroke:white;stroke-width:20" />
-      <polyline points="380,360 610 360" style="fill:none;stroke:white;stroke-width:20" />
+      <polyline points="380,220 620 220" style="fill:none;stroke:white;stroke-width:20" />
+      <polyline points="380,290 620 290" style="fill:none;stroke:white;stroke-width:20" />
+      <polyline points="380,360 620 360" style="fill:none;stroke:white;stroke-width:20" />
    </g>
 
 </svg>
